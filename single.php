@@ -4,7 +4,25 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <strong><?php the_title(); ?></strong>
 <hr />
+
+<?php
+
+$slug = 'links';
+$cat = get_category_by_slug($slug);
+$catID = $cat->term_id;
+
+if ( in_category($catID) ) :
+
+?>
+
+<?php echo get_post_meta($post->ID, 'bookmark', true); ?>
+
+<?php else : ?>
+
 <?php the_content(); ?>
+
+<?php endif; ?>
+
 <?php edit_post_link('Edit','<p>','</p>'); ?>
 <small><?php the_time( get_option( 'date_format' ) ); ?></small>
 </article>
