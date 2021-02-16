@@ -19,7 +19,7 @@ if ( is_home() && in_category($catID) ) :
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<a href="<?php echo get_post_meta($post->ID, 'bookmark', true); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark" class="external"><?php the_title(); ?></a>
+<a href="<?php echo get_post_meta($post->ID, 'bookmark', true); ?>" title="<?php the_title_attribute(); ?>" rel="nofollow" class="external"><?php the_title(); ?></a>
 </article>
 
 <?php else : ?>
