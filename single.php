@@ -15,7 +15,7 @@ if ( in_category($catID) ) :
 
 ?>
 
-<?php echo get_post_meta($post->ID, 'bookmark', true); ?>
+<p><?php echo get_post_meta($post->ID, 'bookmark', true); ?></p>
 
 <?php else : ?>
 
