@@ -40,7 +40,3 @@ blockquote {
 		display: none;
 	}
 }
-
-.external:link:after {
-	content: url("external-link.png");
-}
