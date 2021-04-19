@@ -1,0 +1,42 @@
+/*
+Theme Name: No WordPress Theme
+Theme URI: https://github.com/programming/no-wordpress-theme
+Description: A truly bare-bones WordPress theme.
+Version: 0.1
+*/
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+iframe, object, embed {
+	max-width: 100% !important;
+}
+
+pre {
+	max-width: 100%;
+	height: auto;
+	white-space: pre-wrap;
+}
+
+blockquote {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+}
+
+#footer {
+	bottom: 0;
+	right: 15px;
+	position: fixed;
+}
+
+@media screen and (max-width: 600px) {
+	#footer {
+		display: none;
+	}
+}
